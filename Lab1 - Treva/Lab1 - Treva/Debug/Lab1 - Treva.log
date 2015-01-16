@@ -1,0 +1,26 @@
+﻿Build started 1/16/2015 2:52:02 PM.
+     1>Project "C:\Users\tokeefe\Documents\GitHub\Lab1\Lab1 - Treva\Lab1 - Treva\Lab1 - Treva.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /AI"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\\" /AI"C:\Program Files\Windows Kits\8.1\References\CommonConfiguration\Neutral" /AI"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\Facades\\" /Zi /clr /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _UNICODE /D UNICODE /EHa /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /TP /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\mscorlib.dll" /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Data.dll" /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.dll" /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Drawing.dll" /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Windows.Forms.dll" /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Xml.dll" /analyze- /errorReport:prompt /clr:nostdlib MyForm.cpp
+         MyForm.cpp
+     1>c:\users\tokeefe\documents\github\lab1\lab1 - treva\lab1 - treva\MyForm.h(73): error C2039: 'button1_Click' : is not a member of 'Project1::MyForm'
+                 c:\users\tokeefe\documents\github\lab1\lab1 - treva\lab1 - treva\MyForm.h(15) : see declaration of 'Project1::MyForm'
+     1>c:\users\tokeefe\documents\github\lab1\lab1 - treva\lab1 - treva\MyForm.h(73): error C2065: 'button1_Click' : undeclared identifier
+     1>c:\users\tokeefe\documents\github\lab1\lab1 - treva\lab1 - treva\MyForm.h(73): error C3924: error in argument #2 of delegate constructor call 'System::EventHandler':
+                 pointer to member function expected
+     1>c:\users\tokeefe\documents\github\lab1\lab1 - treva\lab1 - treva\MyForm.h(93): error C2039: 'button2_Click' : is not a member of 'Project1::MyForm'
+                 c:\users\tokeefe\documents\github\lab1\lab1 - treva\lab1 - treva\MyForm.h(15) : see declaration of 'Project1::MyForm'
+     1>c:\users\tokeefe\documents\github\lab1\lab1 - treva\lab1 - treva\MyForm.h(93): error C2065: 'button2_Click' : undeclared identifier
+     1>c:\users\tokeefe\documents\github\lab1\lab1 - treva\lab1 - treva\MyForm.h(93): error C3924: error in argument #2 of delegate constructor call 'System::EventHandler':
+                 pointer to member function expected
+     1>c:\users\tokeefe\documents\github\lab1\lab1 - treva\lab1 - treva\MyForm.h(111): error C2664: 'void System::Windows::Forms::PictureBox::Image::set(System::Drawing::Image ^)' : cannot convert argument 1 from 'bool' to 'System::Drawing::Image ^'
+                 No user-defined-conversion operator available, or
+                 No standard conversion exists from the boxed form of the arithmetic type to the target type
+     1>c:\users\tokeefe\documents\github\lab1\lab1 - treva\lab1 - treva\MyForm.h(117): error C2664: 'void System::Windows::Forms::PictureBox::Image::set(System::Drawing::Image ^)' : cannot convert argument 1 from 'bool' to 'System::Drawing::Image ^'
+                 No user-defined-conversion operator available, or
+                 No standard conversion exists from the boxed form of the arithmetic type to the target type
+     1>Done Building Project "C:\Users\tokeefe\Documents\GitHub\Lab1\Lab1 - Treva\Lab1 - Treva\Lab1 - Treva.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:01.43
