@@ -112,13 +112,14 @@ namespace Project1 {
 		}
 #pragma endregion
 	private: System::Void button1_Click(System::Object^  sender, System::EventArgs^  e) {
-				 g->DrawImage(bmp, 345, 243);
+				 g->DrawImage(bmp, 0, 0);
 	}
 	private: System::Void pictureBox1_Click(System::Object^  sender, System::EventArgs^  e) {
 				 
 	}
 	private: System::Void button2_Click(System::Object^  sender, System::EventArgs^  e) {
-				
+				 pictureBox1->Image = nullptr;
+				 pictureBox1->Refresh();
 	}
 	private: System::Void MyForm_Load(System::Object^  sender, System::EventArgs^  e) {
 				 g = pictureBox1->CreateGraphics();
