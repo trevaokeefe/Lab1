@@ -82,7 +82,7 @@ namespace Project1 {
 			// 
 			// button1
 			// 
-			this->button1->Location = System::Drawing::Point(22, 288);
+			this->button1->Location = System::Drawing::Point(22, 279);
 			this->button1->Name = L"button1";
 			this->button1->Size = System::Drawing::Size(118, 43);
 			this->button1->TabIndex = 0;
@@ -101,7 +101,7 @@ namespace Project1 {
 			// 
 			// button2
 			// 
-			this->button2->Location = System::Drawing::Point(249, 288);
+			this->button2->Location = System::Drawing::Point(249, 279);
 			this->button2->Name = L"button2";
 			this->button2->Size = System::Drawing::Size(118, 43);
 			this->button2->TabIndex = 2;
