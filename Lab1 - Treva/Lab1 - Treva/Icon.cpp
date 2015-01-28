@@ -1,10 +1,11 @@
 #include "Icon.h"
+#include <iostream>
+using namespace std;
 
-void icon::input()
+void Icon::set()
 {
-	cout << "Enter the month as a number: ";
-	cin >> month;
-	cout << "Enter the day of the month: ";
-	cin >> day;
-	check_date();
+	cout << "Enter the x position: ";
+	cin >> new_x;
+	cout << "Enter the y position: ";
+	cin >> new_y;
 }

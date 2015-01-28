@@ -169,10 +169,8 @@ namespace Project1 {
 
 		}
 #pragma endregion
-int x = 0;
-int y = 0;
 	private: System::Void button1_Click(System::Object^  sender, System::EventArgs^  e) {
-				 g->DrawImage(bmp, x, y);
+				 g->DrawImage(bmp, get_x, get_y);
 	}
 	private: System::Void pictureBox1_Click(System::Object^  sender, System::EventArgs^  e) {
 				 
@@ -185,17 +183,17 @@ int y = 0;
 				 g = pictureBox1->CreateGraphics();
 	}
 private: System::Void UPbutton_Click(System::Object^  sender, System::EventArgs^  e) {
-			 y += 25;
+			 pictureBox1->Refresh();
 			 
 }
 private: System::Void DOWNbutton_Click(System::Object^  sender, System::EventArgs^  e) {
-			 y -= 25;
+			 pictureBox1->Refresh();
 }
 private: System::Void LEFTbutton_Click(System::Object^  sender, System::EventArgs^  e) {
-			 x -= 25;
+			 pictureBox1->Refresh();
 }
 private: System::Void RIGHTbutton_Click(System::Object^  sender, System::EventArgs^  e) {
-			 x += 25;
+			 pictureBox1->Refresh();
 }
 };
 }
