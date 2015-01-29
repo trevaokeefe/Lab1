@@ -1,11 +1,20 @@
 #include "Icon.h"
-#include <iostream>
-using namespace std;
 
-void Icon::set()
+int icon::get_x()
 {
-	cout << "Enter the x position: ";
-	cin >> new_x;
-	cout << "Enter the y position: ";
-	cin >> new_y;
+	return x;
+}
+
+int icon::get_y()
+{
+	return y;
+}
+
+void icon::set_x(int new_x)
+{
+	x = new_x;
+}
+void icon::set_y(int new_y)
+{
+	y = new_y;
 }

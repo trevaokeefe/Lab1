@@ -1,7 +1,10 @@
-ref class Icon
+#pragma once
+
+ref class icon
 {
 public:
-	void set(int new_x, int new_y);
+	void set_x(int new_x);
+	void set_y(int new_y);
 
 	int get_x();
 	int get_y();

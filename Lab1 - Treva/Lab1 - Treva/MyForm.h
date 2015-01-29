@@ -1,6 +1,7 @@
 #pragma once
-
+#include "Icon.h"
 namespace Project1 {
+
 
 	using namespace System;
 	using namespace System::ComponentModel;
@@ -168,9 +169,13 @@ namespace Project1 {
 			this->ResumeLayout(false);
 
 		}
+	
 #pragma endregion
+		icon bob;
+		int temp_x;
+		int temp_y;
 	private: System::Void button1_Click(System::Object^  sender, System::EventArgs^  e) {
-				 g->DrawImage(bmp, get_x, get_y);
+				 g->DrawImage(bmp, bob.get_x(), bob.get_y());
 	}
 	private: System::Void pictureBox1_Click(System::Object^  sender, System::EventArgs^  e) {
 				 
@@ -184,16 +189,35 @@ namespace Project1 {
 	}
 private: System::Void UPbutton_Click(System::Object^  sender, System::EventArgs^  e) {
 			 pictureBox1->Refresh();
-			 
+			 if (bob.get_y() > 10)
+			 {
+				 temp_y = bob.get_y() - 10;
+			 }
+			 g->DrawImage(bmp, bob.get_x(), bob.get_y());
 }
 private: System::Void DOWNbutton_Click(System::Object^  sender, System::EventArgs^  e) {
 			 pictureBox1->Refresh();
+			 if (bob.get_y() < 10)
+			 {
+				 temp_y = bob.get_y() + 10;
+			 }
+			 g->DrawImage(bmp, bob.get_x(), bob.get_y());
 }
 private: System::Void LEFTbutton_Click(System::Object^  sender, System::EventArgs^  e) {
 			 pictureBox1->Refresh();
+			 if (bob.get_x() < 10)
+			 {
+				 temp_x = bob.get_x()-10;
+			 }
+			 g->DrawImage(bmp, bob.get_x(), bob.get_y());
 }
 private: System::Void RIGHTbutton_Click(System::Object^  sender, System::EventArgs^  e) {
 			 pictureBox1->Refresh();
+			 if (bob.get_x() > 10)
+			 {
+				 temp_x = bob.get_x() +10;
+			 }
+			 g->DrawImage(bmp, bob.get_x(), bob.get_y());
 }
 };
 }
