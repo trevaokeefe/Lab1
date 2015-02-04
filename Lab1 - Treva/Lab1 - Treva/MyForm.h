@@ -93,6 +93,7 @@ namespace Project1 {
 			// 
 			// pictureBox1
 			// 
+			this->pictureBox1->BorderStyle = System::Windows::Forms::BorderStyle::FixedSingle;
 			this->pictureBox1->Location = System::Drawing::Point(22, 12);
 			this->pictureBox1->Name = L"pictureBox1";
 			this->pictureBox1->Size = System::Drawing::Size(345, 243);
@@ -172,8 +173,8 @@ namespace Project1 {
 	
 #pragma endregion
 		icon bob;
-		int temp_x;
-		int temp_y;
+		int temp_x = 0;
+		int temp_y = 0;
 	private: System::Void button1_Click(System::Object^  sender, System::EventArgs^  e) {
 				 g->DrawImage(bmp, bob.get_x(), bob.get_y());
 	}
@@ -192,16 +193,16 @@ private: System::Void UPbutton_Click(System::Object^  sender, System::EventArgs^
 			 if (bob.get_y() > 9)
 			 {
 				 temp_y = (bob.get_y() - 10);
-				 g->DrawImage(bmp, bob.get_x(), temp_y);
+				 bob.set_y(temp_y);
 			 }
 			 g->DrawImage(bmp, bob.get_x(), temp_y);
 }
 private: System::Void DOWNbutton_Click(System::Object^  sender, System::EventArgs^  e) {
 			 pictureBox1->Refresh();
-			 if (bob.get_y() > -1)
+			 if (bob.get_y() > -1 && bob.get_y() < 210)
 			 {
 				 temp_y = (bob.get_y() + 10);
-				 g->DrawImage(bmp, bob.get_x(), temp_y);
+				 bob.set_y(temp_y);
 			 }
 			 g->DrawImage(bmp, bob.get_x(), temp_y);
 }
@@ -210,16 +211,16 @@ private: System::Void LEFTbutton_Click(System::Object^  sender, System::EventArg
 			 if (bob.get_x() > 9)
 			 {
 				 temp_x = (bob.get_x() - 10);
-				 g->DrawImage(bmp, temp_x, bob.get_y());
+				 bob.set_x(temp_x);
 			 }
 			 g->DrawImage(bmp, temp_x, bob.get_y());
 }
 private: System::Void RIGHTbutton_Click(System::Object^  sender, System::EventArgs^  e) {
 			 pictureBox1->Refresh();
-			 if (bob.get_x() > -1)
+			 if (bob.get_x() > -1 && bob.get_x() < 300)
 			 {
 				 temp_x = (bob.get_x() + 10);
-				 g->DrawImage(bmp, temp_x, bob.get_y());
+				 bob.set_x(temp_x);
 			 }
 			 g->DrawImage(bmp, temp_x, bob.get_y());
 			
